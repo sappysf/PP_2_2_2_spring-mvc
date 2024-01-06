@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CARS</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Mark</th>
+        <th>Module</th>
+        <th>Price</th>
+    </tr>
+    <tr th:each="car : ${key}">
+        <td th:text="${car.getName()}"></td>
+        <td th:text="${car.getEngine()}"></td>
+        <td th:text="${car.getSeries()}"></td>
+    </tr>
+</table>
+</body>
+</html>
